@@ -75,13 +75,28 @@ section h3 {
 }
 
 .activity-card .participants-list {
-  margin: 8px 0 0 20px;
+  margin: 8px 0 0 0;
   padding: 0;
-  list-style-type: disc;
+  list-style-type: none; /* hide bullet points */
 }
 
 .activity-card .participants-list li {
   margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* style for the delete icon */
+.remove-participant {
+  cursor: pointer;
+  color: #c00;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.remove-participant:hover {
+  color: #900;
 }
 
 .form-group {
