@@ -1,2 +1,6 @@
 fastapi
 uvicorn
+
+# used by automated tests
+pytest
+httpx
